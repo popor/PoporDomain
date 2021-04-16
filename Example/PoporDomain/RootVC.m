@@ -20,8 +20,15 @@
     [super viewDidLoad];
     
     {
-        // config
-        //PoporDomain * config = [PoporDomain share];
+        UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"域名配置" style:UIBarButtonItemStylePlain target:self action:@selector(showPoporDomainVC)];
+        self.navigationItem.rightBarButtonItems = @[item1];
+        
+        UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithTitle:@"输出测试" style:UIBarButtonItemStylePlain target:self action:@selector(showDomainList)];
+        self.navigationItem.leftBarButtonItems = @[item2];
+    }
+    
+    
+    {
         NSMutableArray * array = [NSMutableArray new];
         
         [array addObject:[self getBaiduEntity]];
@@ -30,15 +37,7 @@
         
         [PoporDomain setNetDefaultArray:array defaultInfo:nil];
     }
-    {
-        UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"域名配置" style:UIBarButtonItemStylePlain target:self action:@selector(action1)];
-        self.navigationItem.rightBarButtonItems = @[item1];
-    }
-    {
-        UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithTitle:@"输出测试" style:UIBarButtonItemStylePlain target:self action:@selector(showList)];
-        // [item1 setTitleTextAttributes:@{NSFontAttributeName:Font16} forState:UIControlStateNormal];
-        self.navigationItem.leftBarButtonItems = @[item1];
-    }
+    
 }
 
 - (PoporDomainLE *)getBaiduEntity {
@@ -80,17 +79,13 @@
     return entity;
 }
 
-- (void)action1 {
-    NSDictionary * dic;
-    dic = @{
-        
-    };
+- (void)showPoporDomainVC {
     [self.navigationController pushViewController:[PoporDomainVC new] animated:YES];
 }
 
-- (void)showList {
+- (void)showDomainList {
     PoporDomain * config = [PoporDomain share];
-    for (PoporDomainLE * le in config.configEntity.leArray) {
+    for (PoporDomainLE * le in config.domainEntity.leArray) {
         NSLog(@"le.title : %@, le.domain : %@", le.title, le.domain);
     }
     NSLog(@"");

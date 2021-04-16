@@ -84,7 +84,7 @@
 		07796DBB1EE493C7058F62CE44F9CB7B /* JSONModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JSONModel.modulemap; sourceTree = "<group>"; };
 		0C24554EAFFB7BF6B30B7A5775EF9FEA /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
 		0F463548DCAF08B945F33108EE2D77D9 /* Pods-PoporDomain_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PoporDomain_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		104449946CFD9C54D2DB135FB42151C8 /* Pods_PoporDomain_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoporDomain_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		104449946CFD9C54D2DB135FB42151C8 /* Pods_PoporDomain_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporDomain_Example.framework; path = "Pods-PoporDomain_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1136F77811EEA75C4F322D8A60427B2A /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = JSONModel/JSONModelTransformations/JSONKeyMapper.h; sourceTree = "<group>"; };
 		116279E859A0F6B4AF93814F09F08011 /* PoporDomainCC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporDomainCC.m; path = PoporDomain/Classes/PoporDomainCC.m; sourceTree = "<group>"; };
 		1290F8197D8673C9887D635043F1A06D /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = JSONModel/JSONModel/JSONModel.m; sourceTree = "<group>"; };
@@ -92,12 +92,12 @@
 		1C3DE9C08CA3077F21A8A114C14781AA /* PoporDomainAssist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporDomainAssist.h; path = PoporDomain/Classes/PoporDomainAssist.h; sourceTree = "<group>"; };
 		1F394A19175DFE9ADA7FCA61D731A169 /* PoporDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporDomain.h; path = PoporDomain/Classes/PoporDomain.h; sourceTree = "<group>"; };
 		20193C6FBAAEB41EC708523DFFE77F33 /* PoporDomainVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporDomainVC.h; path = PoporDomain/Classes/PoporDomainVC.h; sourceTree = "<group>"; };
-		206138CF15EFFA7B7608F2D15037D85E /* PoporDomain.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PoporDomain.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		206138CF15EFFA7B7608F2D15037D85E /* PoporDomain.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PoporDomain.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2A3C5A8EDB3FDABC497E7FB973641F01 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
-		2B00124DB918F6A0CB7477315B37BEE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2B00124DB918F6A0CB7477315B37BEE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		2BB232B84CD129865556F2AF3343084C /* PoporDomainAssist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporDomainAssist.m; path = PoporDomain/Classes/PoporDomainAssist.m; sourceTree = "<group>"; };
 		2EAA1AE4B5C83FDDB82D39F0FFB55BC8 /* JSONModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JSONModel-Info.plist"; sourceTree = "<group>"; };
-		3000361F2AB7F9FAFEAC097A6C2C547C /* Pods_PoporDomain_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoporDomain_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3000361F2AB7F9FAFEAC097A6C2C547C /* Pods_PoporDomain_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PoporDomain_Tests.framework; path = "Pods-PoporDomain_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33695B8AE4E0995EC455CFA4ECC5DCC2 /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = JSONModel/JSONModelNetworking/JSONHTTPClient.h; sourceTree = "<group>"; };
 		3B2E792303AF6C20F6B2C7C7FE728D81 /* JSONModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C52B0F1AB14F0AFDCCE6101CE774D2D /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = JSONModel/JSONModel/JSONModelError.m; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		5942008CCB26C00D824CAFD8F3DF679A /* JSONModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONModel.debug.xcconfig; sourceTree = "<group>"; };
 		60697E81227428D28A281CC291108049 /* Pods-PoporDomain_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PoporDomain_Example-umbrella.h"; sourceTree = "<group>"; };
 		6C3DD2ADA8BCED3DE3D4AE3B91AC1351 /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = JSONModel/JSONModelTransformations/JSONKeyMapper.m; sourceTree = "<group>"; };
-		73CCF027BE33F95AF1295318357F66EF /* PoporDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PoporDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73CCF027BE33F95AF1295318357F66EF /* PoporDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PoporDomain.framework; path = PoporDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FA02789EADAF9306F742ECB8CDE18A /* Pods-PoporDomain_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporDomain_Example.modulemap"; sourceTree = "<group>"; };
 		7F87CA89F2ED63121F697390ECBD7419 /* Pods-PoporDomain_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporDomain_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8074D0FBD95B84C64C0FEB811E01D1FE /* Pods-PoporDomain_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporDomain_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		8674F55B3A33600ECA0A7867D4FE3E8E /* PoporDomainEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporDomainEntity.m; path = PoporDomain/Classes/PoporDomainEntity.m; sourceTree = "<group>"; };
 		8916DA0D02911D1E80B1E5C763B03161 /* Pods-PoporDomain_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PoporDomain_Example-dummy.m"; sourceTree = "<group>"; };
 		97A96E8031730A7BEAE1DA10F09AF88C /* PoporDomain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PoporDomain-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA6B1B6F49449D5D872FD72C106AB42C /* JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONModel-prefix.pch"; sourceTree = "<group>"; };
 		ABCB315A36AF9486A928F2075D79994B /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = JSONModel/JSONModelTransformations/JSONValueTransformer.h; sourceTree = "<group>"; };
 		B09C4C11691FFD581C4D233DAD2123A4 /* PoporDomain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporDomain-umbrella.h"; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		B64788F467351C9B365532778872903F /* PoporDomain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PoporDomain-prefix.pch"; sourceTree = "<group>"; };
 		B6A192A250C53D3043BE4FCAD17A6C2C /* Pods-PoporDomain_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporDomain_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B744F21AF42CDB40B20DE5EBD3E110E8 /* PoporDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PoporDomain.debug.xcconfig; sourceTree = "<group>"; };
-		BAACA1BF7AB3DD28402C4F9A7C2FD104 /* JSONModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAACA1BF7AB3DD28402C4F9A7C2FD104 /* JSONModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JSONModel.framework; path = JSONModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF71905193104DC039F69DB83A831DB7 /* Pods-PoporDomain_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PoporDomain_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D0F33CECD3124E8B3CA4D353F94460A3 /* PoporDomainVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PoporDomainVC.m; path = PoporDomain/Classes/PoporDomainVC.m; sourceTree = "<group>"; };
 		D3B60680222A8204181B1F95258047E0 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = JSONModel/JSONModel/JSONModelClassProperty.m; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		F380C85A089301CA7EE0353CCFE96D58 /* PoporDomainEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PoporDomainEntity.h; path = PoporDomain/Classes/PoporDomainEntity.h; sourceTree = "<group>"; };
 		F55807C37EB5ED730DC8F805BE92073F /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = JSONModel/JSONModelNetworking/JSONHTTPClient.m; sourceTree = "<group>"; };
 		F7E553898F9D367D79E82E99B81A9064 /* Pods-PoporDomain_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PoporDomain_Example-Info.plist"; sourceTree = "<group>"; };
-		FA18A7FD4111DC46C876415F5C535738 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FA18A7FD4111DC46C876415F5C535738 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		FB4ACB6639152EC35B82EEBC91629CD7 /* Pods-PoporDomain_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PoporDomain_Tests.modulemap"; sourceTree = "<group>"; };
 		FFAF9E2781B80410178A8AFCB3F33EF4 /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = JSONModel/JSONModelTransformations/JSONValueTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,6 +292,7 @@
 				FFAF9E2781B80410178A8AFCB3F33EF4 /* JSONValueTransformer.m */,
 				D3197AEC62ADFD50AE1DB67E281C15F5 /* Support Files */,
 			);
+			name = JSONModel;
 			path = JSONModel;
 			sourceTree = "<group>";
 		};
@@ -979,7 +980,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
