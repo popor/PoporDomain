@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  目前只针对一个页面的情形, 多情形的还没遇到.
  */
 
-@property (nonatomic, strong) PoporDomainEntity * configEntity;
+@property (nonatomic, strong) PoporDomainEntity * domainEntity;
 @property (nonatomic, strong) NSString          * defaultInfo;
 
 // 点击新的域名选项、新增、删除的回调

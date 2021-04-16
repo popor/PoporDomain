@@ -44,11 +44,11 @@ static NSString * SaveKey = @"config";
                 NSString * str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
                 NSData * data1 = [str dataUsingEncoding:NSUTF8StringEncoding];
                 
-                instance.configEntity = [[PoporDomainEntity alloc] initWithData:data1 error:nil];
+                instance.domainEntity = [[PoporDomainEntity alloc] initWithData:data1 error:nil];
                 
                 
             } else {
-                instance.configEntity = [PoporDomainEntity new];
+                instance.domainEntity = [PoporDomainEntity new];
                 
             }
             
@@ -96,15 +96,15 @@ static NSString * SaveKey = @"config";
     
     //config.netArray = (NSMutableArray *)[config.yyDiskCache objectForKey:SaveKey];
     // 判断是否需要更新NetArray
-    if (!config.configEntity.leArray ||
-        config.configEntity.leArray.count != array.count) {
+    if (!config.domainEntity.leArray ||
+        config.domainEntity.leArray.count != array.count) {
         [self restoreNetArray];
     } else {
         // 判断是否需要更新NetArray
         BOOL isNeedUpdate = NO;
         for (int i = 0; i<array.count; i++) {
             PoporDomainLE * leDefault = config.configEntity_default.leArray[i];
-            PoporDomainLE * leCurrent = config.configEntity.leArray[i];
+            PoporDomainLE * leCurrent = config.domainEntity.leArray[i];
             
             if (![leDefault.title isEqualToString:leCurrent.title] ) {
                 isNeedUpdate = YES;
@@ -128,7 +128,7 @@ static NSString * SaveKey = @"config";
     PoporDomain * config = [PoporDomain share];
     
     [self updateLeTitleWArray:config.configEntity_default.leArray];
-    config.configEntity.leArray = config.configEntity_default.leArray.mutableCopy;
+    config.domainEntity.leArray = config.configEntity_default.leArray.mutableCopy;
     
     [self updateDomainDefault];
 }
@@ -136,7 +136,7 @@ static NSString * SaveKey = @"config";
 + (void)restoreNetArrayAt:(NSInteger)index {
     PoporDomain * config = [PoporDomain share];
     PoporDomainLE * leDefault = config.configEntity_default.leArray[index];
-    PoporDomainLE * leCurrent = config.configEntity.leArray[index];
+    PoporDomainLE * leCurrent = config.domainEntity.leArray[index];
     
     [leCurrent.ueArray addObjectsFromArray:leDefault.ueArray];
     
@@ -167,12 +167,12 @@ static NSString * SaveKey = @"config";
 
 + (void)updateDomainDefault {
     PoporDomain * config = [PoporDomain share];
-    [config.configEntity.toJSONData writeToFile:[self basePath] atomically:YES];
+    [config.domainEntity.toJSONData writeToFile:[self basePath] atomically:YES];
 }
 
 + (void)updateDomain {
     PoporDomain * config = [PoporDomain share];
-    [config.configEntity.toJSONData writeToFile:[self basePath] atomically:YES];
+    [config.domainEntity.toJSONData writeToFile:[self basePath] atomically:YES];
     
     if (config.blockUpdateDomain) {
         config.blockUpdateDomain();

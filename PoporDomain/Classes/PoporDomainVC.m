@@ -83,7 +83,7 @@ UICollectionViewDelegate, UICollectionViewDataSource
 
 - (void)setDefaultValue {
     PoporDomain   * config     = [PoporDomain share];
-    PoporDomainLE * leCurrent = config.configEntity.leArray[0];
+    PoporDomainLE * leCurrent = config.domainEntity.leArray[0];
     self.defaultUrlTF.text = leCurrent.domain;
 }
 
@@ -132,7 +132,7 @@ UICollectionViewDelegate, UICollectionViewDataSource
         // height
         PoporDomain * pdConfig = [PoporDomain share];
         CGFloat height = 0;
-        if (pdConfig.configEntity.leArray.count <= 1) {
+        if (pdConfig.domainEntity.leArray.count <= 1) {
             height = 0;
         }else{
             height = PoporDomainCCHeight;
@@ -158,7 +158,7 @@ UICollectionViewDelegate, UICollectionViewDataSource
 - (void)addInfo {
     PoporDomain * pdConfig = [PoporDomain share];
     NSMutableArray * titleArray = [NSMutableArray new];
-    for (PoporDomainLE * le in pdConfig.configEntity.leArray) {
+    for (PoporDomainLE * le in pdConfig.domainEntity.leArray) {
         [titleArray addObject:le.title];
     }
     
@@ -221,7 +221,7 @@ UICollectionViewDelegate, UICollectionViewDataSource
         UIView * superView = self.view;
         view0.translatesAutoresizingMaskIntoConstraints = NO;
         
-        CGFloat top_offset = (pdConfig.configEntity.leArray.count <= 1) ? 0: 20;
+        CGFloat top_offset = (pdConfig.domainEntity.leArray.count <= 1) ? 0: 20;
         
         NSLayoutConstraint *topLC = [NSLayoutConstraint constraintWithItem:view0 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.headCV attribute:NSLayoutAttributeBottom multiplier:1.0 constant:top_offset];
         [superView addConstraint:topLC];;
@@ -296,9 +296,9 @@ UICollectionViewDelegate, UICollectionViewDataSource
 #pragma mark - VC_DataSource
 - (PoporDomainLE *)listEntity {
     if (self.cvSelectIndex < 0) {
-        return self.domainConfig.configEntity.leArray.firstObject;
+        return self.domainConfig.domainEntity.leArray.firstObject;
     }else{
-        return self.domainConfig.configEntity.leArray[self.cvSelectIndex];
+        return self.domainConfig.domainEntity.leArray[self.cvSelectIndex];
     }
 }
 
@@ -308,12 +308,12 @@ UICollectionViewDelegate, UICollectionViewDataSource
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.domainConfig.configEntity.leArray.count;
+    return self.domainConfig.domainEntity.leArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PoporDomainCC * cell = [collectionView dequeueReusableCellWithReuseIdentifier:PoporDomainCCKey forIndexPath:indexPath];
-    PoporDomainLE * le   = self.domainConfig.configEntity.leArray[indexPath.row];
+    PoporDomainLE * le   = self.domainConfig.domainEntity.leArray[indexPath.row];
     cell.titleL.text           = le.title;
     
     if (indexPath.row == 0) {
@@ -327,7 +327,7 @@ UICollectionViewDelegate, UICollectionViewDataSource
 
 #pragma layout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PoporDomainLE * le = self.domainConfig.configEntity.leArray[indexPath.row];
+    PoporDomainLE * le = self.domainConfig.domainEntity.leArray[indexPath.row];
     return CGSizeMake(le.titleW, PoporDomainCCHeight);
 }
 
