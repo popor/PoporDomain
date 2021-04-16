@@ -1,0 +1,6 @@
+framework module PoporDomain {
+  umbrella header "PoporDomain-umbrella.h"
+
+  export *
+  module * { export * }
+}

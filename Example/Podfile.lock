@@ -1,0 +1,23 @@
+PODS:
+  - JSONModel (1.8.0)
+  - PoporDomain (1.0):
+    - JSONModel
+
+DEPENDENCIES:
+  - PoporDomain (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - JSONModel
+
+EXTERNAL SOURCES:
+  PoporDomain:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  PoporDomain: 7908b41dc9a6a350177444aca85ae80630abdc6e
+
+PODFILE CHECKSUM: a51d748e1419151294935b899e2fd4e983c5a623
+
+COCOAPODS: 1.10.1
